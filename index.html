@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Damola, I love you so much.</title>
+ <!-- add icon link -->
+ <link rel = "icon" href = 
+ "https://33.media.tumblr.com/d118026336bccd17c57790206dabdcb0/tumblr_ns98jo7gNI1t1dpc1o1_500.gif" 
+         type = "image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div style="display:none">
+    <embed src=""/> 
+ </div>
+<style>
+
+.not-clickable-image { 
+  pointer-events: none; 
+}
+
+img {   
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
+a { 
+  text-decoration: none;
+ }
+
+ p {text-align: center;}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+body  {
+  background-image: url("https://i.pinimg.com/originals/fc/01/fc/fc01fcf41d53c4cab99e05c2dcaf848f.gif");
+  background-color: #cccccc;
+  background-attachment: scroll;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('c:\Users\Coherce\Downloads\Angel.jpg');
+  min-height: 400px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("c:\Users\Coherce\Downloads\Angel.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/*scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(160, 214, 12); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #79920a; 
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.vetee{
+  display: inline;
+  padding: 100px;
+  height: 100vh;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<script>
+
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  modal.style.display = "block";
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  
+    // Get the modal
+  var modal = document.getElementById("w3-button w3-light-grey");
+  
+  
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+
+<body>
+   
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>I made this one for you, as You're the best girlfriend ever so far, i'm so greatful to have someone like you in my life, thanks for reading this :D</p>
+   <img src="vetee.jpg" alt="">
+    </div>
+  
+  </div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">I <span class="w3-hide-small">LOVE</span> YOU, VETEE</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">You're the best girlfriend ever, Damola.</h3>
+  <p class="w3-center"><em></em></p>
+  <p>Damola, i still can't believe, how kind was i before that god gifted me such a pretty angel like you.You're a magic. I love you so much you know, everyday, even if you're mine since so long, i still fall for you every single day my love. You're like a baby to me, you're like a cute baby to me literally. I can't tell you how much i love you.
+    I love literally everything about you. Since the beginning of our first relationship till today to the very future of ours, this will be an infinity love. I love you more than myself, you're my top most priority babe, your happiness is my happiness, your sadness is my sadness, when ur smiling, i'm smiling too! I like it when we both laugh together. I just feel like living in heaven
+  with you every single day. This feels so great to be with you always. I've been everywhere babe, looking for someone, someone who can please me and love me all life long, then my search was over already cause i already found an Angel, i can't believe how fast time went.
+  This feels like a whole dream. I've been smiling and smiling and smiling looking at your texts and looking at you too. I'm so lucky that before i confessed to you, no one was able to take you, tho you left me back then sha. I love every single thing about you my love, every single thing... Your sweet and cute voice, your cute laugh and giggle, your cute facial expressions, your pretty and big smile which sparkles your whole face,and your big ass with the way you handle me on bed and you do cry
+  your face which attracts me, your cute ears i want to touch them from down eeeeee, your eye-brows the way you move them saying "hm hm" that's just so cute baby, your pretty nose i will literally kiss it, your pink plum lips make me kiss you 24/7, the way your face becomes so cute and pretty when you smile oh my god, your neck and collorbone that attracts me towards you babe. The way you make me attracted towards you every single moment.
+  Oh wait, i'm already attracted towards you with feelings, i have such strong feelings towards you my love, you're my whole universe, a day seems so boring without you, whenever you go out somewhere, or if you're sleeping, or maybe if you're on call with someone else, i miss you so much my baby, i miss you so much at those times. I can't live even a single second without you my baby i knew i sometimes act weirds and childishly but i'm using this momemt to tell you i'm sorry.HAPPY GIRLFRIEND'S DAY</p>
+  
+  
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Your man(ADEDAMOLA) loves you soooo much ^^.. Stay happiest and safe forever love!</p>
+  <p>We're gonna be together forever.</p>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" title="Rittika upar chalogi?" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>GO BACK UP</a>
+
+  <p>Yep, it's made by your love, ADEDAMOLA.</p>
+
+ <img class="vetee" src="vetee.jpg" alt="" srcset="">
+  
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>We're gonna be together forever.</p>
+  </div>
+
+</div>
+
+</footer>
+
+</body>
+
+
+</html>
